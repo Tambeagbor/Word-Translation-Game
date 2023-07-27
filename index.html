@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Translation Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-menu">
+        <div class="translations">
+            <div class="language-options">
+                <select id="leftLanguage">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <!-- Add more language options here -->
+                </select>
+                <select id="rightLanguage">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <!-- Add more language options here -->
+                </select>
+            </div>
+            <div class="translation-tool">
+                <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+                <button id="translateBtn">Translate</button>
+                <div id="translationResult"></div>
+            </div>
+        </div>
+        <div class="game-options">
+            <button id="multipleChoiceBtn">Multiple Choice Game</button>
+            <button id="sentenceTranslationBtn">Sentence Translation Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
