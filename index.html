@@ -8,6 +8,10 @@
 </head>
 <body>
     <div class="main-menu">
+        <div class="game-header">
+            <h1>Construe...</h1>
+            <img src="speech-bubble.png"> 
+        </div>
         <div class="translations">
             <div class="language-options">
                 <select id="leftLanguage">
@@ -24,15 +28,23 @@
             <div class="translation-tool">
                 <textarea id="inputText" placeholder="Enter text to translate"></textarea>
                 <button id="translateBtn">Translate</button>
+                <button id="clearBtn">Clear</button>
                 <div id="translationResult"></div>
             </div>
         </div>
         <div class="game-options">
             <button id="multipleChoiceBtn">Multiple Choice Game</button>
-            <button id="sentenceTranslationBtn">Sentence Translation Game</button>
-        </div>
+            <div id="multipleChoiceGame" class="game-section">
+            <div id="questionContainer">
+        <h2 id="question"></h2>
+        <ul id="choices"></ul>
+        <button id="nextBtn" style="display: none;">Next Question</button>
+        <div id="feedback"></div>
     </div>
+</div>
+            </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
